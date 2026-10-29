@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/escudo"
+            android:contentDescription="Escudo Real Madrid"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REAL MADRID"
+            android:textColor="@color/dorado"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Hala Madrid!"
+            android:textColor="@color/texto_gris"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario"
+            android:textColor="@color/texto_claro"
+            android:textSize="13sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input"
+            android:hint="Ingresa tu usuario"
+            android:textColorHint="@color/texto_gris"
+            android:textColor="@color/texto_claro"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:inputType="text"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textColor="@color/texto_claro"
+            android:textSize="13sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/edtContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input"
+            android:hint="Ingresa tu contraseña"
+            android:textColorHint="@color/texto_gris"
+            android:textColor="@color/texto_claro"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Iniciar sesión"
+            android:textColor="@color/fondo_profundo"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@drawable/bg_boton_dorado"
+            android:layout_marginTop="32dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
